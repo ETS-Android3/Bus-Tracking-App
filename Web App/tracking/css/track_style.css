@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/bakgr.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    overflow: hidden;
+    background-color: rgb(17, 82, 100);
+}
+
+.menu a {
+    float: left;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+
+}
+
+.menu a:hover {
+    background-color: lightblue;
+}
+
+slider {
+    display: block;
+    width: 390px;
+    height: 730px;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+
+
+}
+
+#logout {
+    float: right;
+}
+
+#map {
+    height: 50%;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.submit-btn {
+    width: 50%;
+    padding: 10px 40px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, rgb(17, 82, 100), #80a6ec);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+
+}
+
+.input-map {
+    margin-top: auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    transition: .5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+p {
+    color: white;
+
+}
+
+.form-box {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    margin-top: -20px;
+    margin-left: -40px;
+
+    padding: 5px;
+
+}

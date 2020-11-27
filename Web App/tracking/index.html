@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <title>Tracking Sign</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sign_style.css">
+    <script src="js/sign.js"></script>
+    <script src="js/common.js"></script>
+    <script src="/js/user.js"></script>
+
+</head>
+
+<body>
+    <div class="hero">
+
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="email" id="emailLogin" class="input-field" placeholder="User Email required" required>
+                <input type="password" id="passwordLogin" class="input-field" placeholder="Enter Password required" required>
+                <button type="button" class="submit-btn" onclick="doLogin()">Login</button>
+            </form>
+
+            <form id="register" class="input-group">
+                <input type="text" id="firstName" class="input-field" placeholder="First Name required">
+                <input type="text" id="lastName" class="input-field" placeholder="Last Name required">
+                <input type="email" id="emailRegister" class="input-field" placeholder="User Email required">
+                <input type="password" id="passwordRegister" class="input-field" placeholder="Enter Password required">
+                <input type="password" id="passwordConfirm" class="input-field" placeholder="Confirm Password required">
+                <input type="checkbox" id="checkTerms" class="check-box"><span>I agree to terms & conditions</span>
+                <button type="button" class="submit-btn" onclick="doRegister()">Register</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

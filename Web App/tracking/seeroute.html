@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tracking Route</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/track_style.css">
+    <script src="js/common.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/position.js"></script>
+
+</head>
+
+<body>
+
+    <div class="menu">
+        <a href="home.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="#">Tracking</a>
+        <a href="index.html" onclick=doLogout() id="logout">Logout</a>
+
+    </div>
+    <div id="map" ></div><br><br>
+    <div class="form-box">
+    <form class="input-map">
+        <b><p >Start date:</p></b> <input type="text" id="startdate" class="input-field" value=""><br>
+        <b><p >End date:</p></b> <input type="text" id="enddate" class="input-field" value=""><br>
+        <b><p >Bus Line:</p></b> <input type="text" id="terminalid" class="input-field" value=""><br><br>
+        <input type="checkbox" id="checkBoxToday" class="check-box" onclick="seeFromToday(this)"><span><p><b> Do you want to see the bus position from today?</p></span></b></span><br><br>
+        <input type="button" class="submit-btn" value="Set Marker" id="markersBtn" onclick=addMarkers() onsubmit="return false">
+    </form>
+</div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx1IvFokZPHw0MOapSd4o3HBk_nQAjVwM&callback=initMap"
+        async defer></script>
+
+</body>
+
+</html>
